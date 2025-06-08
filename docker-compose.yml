@@ -16,10 +16,3 @@ services:
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
     restart: unless-stopped
-
-  node_exporter:
-    image: prom/node-exporter:latest
-    container_name: node_exporter
-    ports:
-      - "9100:9100"
-    restart: unless-stopped
